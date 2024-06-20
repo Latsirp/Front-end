@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <title>Produtos | Estatium | Tech Master</title>
+  <title>Adicionar produto | Gestão de produtos | Estatium | Tech Master</title>
   <link href="assets/css/pace.min.css" rel="stylesheet" />
   <script src="assets/js/pace.min.js"></script>
   <link rel="icon" href="assets/img/imagem_logo.png" type="image/x-icon">
@@ -80,10 +80,14 @@
             <i class="zmdi zmdi-view-dashboard"></i> <span>Gestão de produtos</span>
           </a>
           <ul class="dropdown-menu submenu">
-            <li><a href="create-produto.html">Adicionar produto</a></li>
-            <li><a href="read-produto.html">Visualizar produto</a></li>
-            <li><a href="update-produto.html">Atualizar produto</a></li>
-            <li><a href="delete-produto.html">Remover produto</a></li>
+            <li><a href="create-produto.html"><i class="zmdi zmdi-view-dashboard"></i> <span>Adicionar
+                  produto</span></a></li>
+            <li><a href="read-produto.html"><i class="zmdi zmdi-view-dashboard"></i> <span>Visualizar produto</span></a>
+            </li>
+            <li><a href="update-produto.html"><i class="zmdi zmdi-view-dashboard"></i> <span>Atualizar
+                  produto</span></a></li>
+            <li><a href="delete-produto.html"><i class="zmdi zmdi-view-dashboard"></i> <span>Remover produto</span></a>
+            </li>
           </ul>
         </li>
         <li>
@@ -100,21 +104,34 @@
         <div class="col-lg-6">
           <div class="card" id="createProductCard">
             <div class="card-header bg-primary">
-              <h4 class="mb-0 text-white">Criar Produto</h4>
+              <h4 class="mb-0 text-white">Criar produto</h4>
             </div>
             <div class="card-body">
               <form action="processar_produto.php" method="POST">
                 <div class="form-group">
-                  <label for="nomeProduto">Nome</label>
-                  <input type="text" class="form-control" id="nomeProduto" name="nomeProduto" required>
+                  <label for="create_nomeProduto">Nome</label>
+                  <input type="text" class="form-control" id="create_nomeProduto" name="create_nomeProduto"
+                    placeholder="Digite o nome do produto" required>
                 </div>
                 <div class="form-group">
-                  <label for="descricao">Descrição</label>
-                  <textarea class="form-control" id="descricao" name="descricao" rows="3"></textarea>
+                  <label for="create_idProduto">ID</label>
+                  <input type="number" class="form-control" id="create_idProduto" name="create_idProduto"
+                    placeholder="Digite o ID do produto" required>
                 </div>
                 <div class="form-group">
-                  <label for="quantidade">Quantidade</label>
-                  <input type="number" class="form-control" id="quantidade" name="quantidade" required>
+                  <label for="create_descricao">Descrição</label>
+                  <textarea class="form-control" id="create_descricao" name="create_descricao" rows="3"
+                    placeholder="Adicione uma descrição para o produto" required></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="create_quantidade">Quantidade</label>
+                  <input type="number" class="form-control" id="create_quantidade" name="create_quantidade"
+                    placeholder="Adicione a quantidade do produto" required>
+                </div>
+                <div class="form-group">
+                  <label for="create_quantidade">Qualidade</label>
+                  <input type="number" class="form-control" id="create_qualidade" name="create_qualidade"
+                    placeholder="Adicione a qualidade do produto" required>
                 </div>
                 <button type="submit" class="btn btn-success">Criar</button>
               </form>

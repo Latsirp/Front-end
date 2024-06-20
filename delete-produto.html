@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <title>Produtos | Estatium | Tech Master</title>
+  <title>Remover produto | Gestão de produtos | Estatium | Tech Master</title>
   <link href="assets/css/pace.min.css" rel="stylesheet" />
   <script src="assets/js/pace.min.js"></script>
   <link rel="icon" href="assets/img/imagem_logo.png" type="image/x-icon">
@@ -80,10 +80,14 @@
             <i class="zmdi zmdi-view-dashboard"></i> <span>Gestão de produtos</span>
           </a>
           <ul class="dropdown-menu submenu">
-            <li><a href="create-produto.html">Adicionar produto</a></li>
-            <li><a href="read-produto.html">Visualizar produto</a></li>
-            <li><a href="update-produto.html">Atualizar produto</a></li>
-            <li><a href="delete-produto.html">Remover produto</a></li>
+            <li><a href="create-produto.html"><i class="zmdi zmdi-view-dashboard"></i> <span>Adicionar
+                  produto</span></a></li>
+            <li><a href="read-produto.html"><i class="zmdi zmdi-view-dashboard"></i> <span>Visualizar produto</span></a>
+            </li>
+            <li><a href="update-produto.html"><i class="zmdi zmdi-view-dashboard"></i> <span>Atualizar
+                  produto</span></a></li>
+            <li><a href="delete-produto.html"><i class="zmdi zmdi-view-dashboard"></i> <span>Remover produto</span></a>
+            </li>
           </ul>
         </li>
         <li>
@@ -100,23 +104,17 @@
         <div class="col-lg-6">
           <div class="card" id="createProductCard">
             <div class="card-header bg-primary">
-              <h4 class="mb-0 text-white">Criar Produto</h4>
+              <h4 class="mb-0 text-white">Excluir produto</h4>
             </div>
             <div class="card-body">
               <form action="processar_produto.php" method="POST">
                 <div class="form-group">
-                  <label for="nomeProduto">Nome</label>
-                  <input type="text" class="form-control" id="nomeProduto" name="nomeProduto" required>
+                  <label for="delete_idProduto">ID</label>
+                  <input type="number" class="form-control" id="delete_idProduto" name="delete_idProduto"
+                    placeholder="Digite o ID do produto" required>
                 </div>
-                <div class="form-group">
-                  <label for="descricao">Descrição</label>
-                  <textarea class="form-control" id="descricao" name="descricao" rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                  <label for="quantidade">Quantidade</label>
-                  <input type="number" class="form-control" id="quantidade" name="quantidade" required>
-                </div>
-                <button type="submit" class="btn btn-success">Criar</button>
+                <p>Você tem certeza que deseja excluir este produto?</p>
+                <button type="submit" class="btn btn-danger">Remover</button>
               </form>
             </div>
           </div>
