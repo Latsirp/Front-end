@@ -15,6 +15,7 @@
   </head>
 
   <body class="flex flex-col min-h-screen bg-orchidBlossom font-poppins">
+    <!-- Botão para abrir o sidebar em dispositivos menores -->
     <button
       data-drawer-target="default-sidebar"
       data-drawer-toggle="default-sidebar"
@@ -35,11 +36,14 @@
         ></path>
       </svg>
     </button>
+    <!-- Sidebar -->
     <aside
       id="default-sidebar"
       class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full lg:translate-x-0 bg-white"
     >
+      <!-- Conteúdo do sidebar -->
       <div class="overflow-y-auto py-5 px-3 h-full border-r border-white">
+        <!-- Logo e nome da empresa -->
         <a
           href="index.html"
           class="flex items-center uppercase tracking-estatium p-2 text-2xl text-blazeOrange group"
@@ -51,6 +55,7 @@
           />
           <span class="ml-1 font-extrabold">Estatium</span>
         </a>
+        <!-- Lista de links do menu -->
         <ul class="pt-5 mt-5 space-y-2 border-t border-blazeOrange">
           <li>
             <a
@@ -143,11 +148,13 @@
         </ul>
       </div>
     </aside>
+    <!-- Conteúdo principal -->
     <div
       id="content-wrapper"
       class="flex-1 p-6 ml-0 lg:ml-64 transition-margin duration-300 ease-in-out"
     >
       <main class="flex-1 p-6">
+        <!-- Seções principais da página -->
         <section class="p-3 sm:p-5 antialiased">
           <div class="mx-auto max-w-screen-xl px-4 lg:px-12 relative">
             <div
@@ -207,6 +214,7 @@
           </div>
         </section>
       </main>
+      <!-- Rodapé -->
       <footer class="bg-white rounded-lg shadow m-4">
         <div
           class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
