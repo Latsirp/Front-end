@@ -225,7 +225,7 @@
                       <th scope="col" class="px-4 py-3">ID</th>
                       <th scope="col" class="px-4 py-3">Descrição</th>
                       <th scope="col" class="px-4 py-3">Qualidade</th>
-                      <th scope="col" class="px-4 py-3"></th>
+                      <th scope="col" class="px-4 py-3">Data de inspeção</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -241,6 +241,7 @@
                         Descrição
                       </td>
                       <td class="px-4 py-3">Qualidade</td>
+                      <td class="px-4 py-3">Data de inspeção</td>
                       <td class="px-4 py-3 relative">
                         <button
                           id="dropdown-button"
@@ -462,19 +463,34 @@
                     required
                   />
                 </div>
+                <div>
+                  <label
+                    for="inspecao"
+                    class="block mb-2 text-sm font-medium text-blazeOrange"
+                    >Data de inspeção</label
+                  >
+                  <input
+                    type="date"
+                    name="inspecao"
+                    id="inspecao"
+                    class="bg-white border placeholder-blazeOrange border-blazeOrange text-blazeOrange text-sm rounded-lg focus:ring-blazeOrange focus:border-blazeOrange block w-full p-2.5"
+                    required
+                  />
+                </div>
                 <div class="sm:col-span-2">
                   <label
                     for="descricao"
                     class="block mb-2 text-sm font-medium text-blazeOrange"
                     >Descrição</label
                   >
-                  <textarea
+                  <input
+                    type="text"
+                    name="descricao"
                     id="descricao"
-                    rows="4"
                     class="bg-white border placeholder-blazeOrange border-blazeOrange text-blazeOrange text-sm rounded-lg focus:ring-blazeOrange focus:border-blazeOrange block w-full p-2.5"
                     placeholder="Digite a descrição do produto"
                     required
-                  ></textarea>
+                  />
                 </div>
               </div>
               <button
@@ -582,19 +598,34 @@
                     required
                   />
                 </div>
+                <div>
+                  <label
+                    for="inspecao"
+                    class="block mb-2 text-sm font-medium text-blazeOrange"
+                    >Data de inspeção</label
+                  >
+                  <input
+                    type="date"
+                    name="inspecao"
+                    id="inspecao"
+                    class="bg-white border placeholder-blazeOrange border-blazeOrange text-blazeOrange text-sm rounded-lg focus:ring-blazeOrange focus:border-blazeOrange block w-full p-2.5"
+                    required
+                  />
+                </div>
                 <div class="sm:col-span-2">
                   <label
                     for="descricao"
                     class="block mb-2 text-sm font-medium text-blazeOrange"
                     >Descrição</label
                   >
-                  <textarea
+                  <input
+                    type="text"
+                    name="descricao"
                     id="descricao"
-                    rows="4"
                     class="bg-white border placeholder-blazeOrange border-blazeOrange text-blazeOrange text-sm rounded-lg focus:ring-blazeOrange focus:border-blazeOrange block w-full p-2.5"
                     placeholder="Digite a descrição do produto"
                     required
-                  ></textarea>
+                  />
                 </div>
               </div>
               <button
@@ -625,9 +656,7 @@
           class="hidden fixed top-0 right-0 bottom-0 left-0 z-40 flex items-center justify-center bg-black bg-opacity-50"
         >
           <div class="relative p-4 w-full max-w-xl max-h-full">
-            <div
-              class="relative p-4 bg-white rounded-lg shadow sm:p-5"
-            >
+            <div class="relative p-4 bg-white rounded-lg shadow sm:p-5">
               <div class="flex justify-between mb-4 rounded-t sm:mb-5">
                 <div class="text-lg text-blazeOrange md:text-xl">
                   <h3 class="font-semibold">Nome</h3>
@@ -667,6 +696,12 @@
                   Qualidade
                 </dt>
                 <dd class="mb-4 font-light text-blazeOrange sm:mb-5">Lorem</dd>
+                <dt class="mb-2 font-semibold leading-none text-blazeOrange">
+                  Data de inspeção
+                </dt>
+                <dd class="mb-4 font-light text-blazeOrange sm:mb-5">
+                  xx-xx-xxxx
+                </dd>
               </dl>
             </div>
           </div>

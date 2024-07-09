@@ -128,18 +128,17 @@ document.addEventListener("DOMContentLoaded", function () {
   var myChart = new Chart(ctx, {
     type: "doughnut",
     data: {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      labels: ["Ótimo", "Bom", "Regular", "Ruim", "Péssimo"],
       datasets: [
         {
           label: "My First Dataset",
-          data: [12, 19, 3, 5, 2, 3],
+          data: [15, 15, 15, 15, 15],
           backgroundColor: [
-            "#FF6384",
-            "#36A2EB",
-            "#FFCE56",
-            "#4BC0C0",
-            "#9966FF",
-            "#FF9F40",
+            "#fd7f2a",
+            "#fd6803",
+            "#d75802",
+            "#b04801",
+            "#893801",
           ],
           hoverOffset: 4,
         },
