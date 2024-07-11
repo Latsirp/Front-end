@@ -41,7 +41,6 @@
       id="default-sidebar"
       class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full lg:translate-x-0 bg-white"
     >
-      <!-- Conteúdo do sidebar -->
       <div class="overflow-y-auto py-5 px-3 h-full border-r border-white">
         <!-- Logo e nome da empresa -->
         <a
@@ -154,7 +153,6 @@
       class="flex-1 p-6 ml-0 lg:ml-64 transition-margin duration-300 ease-in-out"
     >
       <main class="flex-1 p-6">
-        <!-- Seções principais da página -->
         <section class="p-3 sm:p-5 antialiased">
           <div class="mx-auto max-w-screen-xl px-4 lg:px-12 relative">
             <div
@@ -163,17 +161,16 @@
               <div
                 class="flex flex-col md:flex-row items-center justify-center space-y-3 md:space-y-0 md:space-x-4 p-4"
               >
+                <!-- Gráfico de pizza -->
                 <div class="w-full md:w-1/2">
                   <canvas id="donutChart" class="mx-auto"></canvas>
                 </div>
+                <!-- Seção com estatísticas sobre a porcentagem da qualidade geral -->
                 <div class="w-full md:w-1/2">
                   <div class="text-center">
                     <h2 class="text-lg font-semibold text-blazeOrange mb-2">
-                      Controle de qualidade
+                      Qualidade geral
                     </h2>
-                    <p class="text-sm text-gray-600">
-                      Veja o desempenho detalhado de seus produtos.
-                    </p>
                   </div>
                   <div class="mt-4">
                     <div class="bg-gray-100 rounded-lg p-4">
@@ -229,6 +226,7 @@
             </div>
           </div>
         </section>
+        <!-- Seção com estatísticas sobre a porcentagem da qualidade individual -->
         <section class="p-3 sm:p-5 antialiased">
           <div class="mx-auto max-w-screen-xl px-4 lg:px-12 relative">
             <div
@@ -240,7 +238,7 @@
                 <div class="w-full md:w-1/2">
                   <div class="text-center">
                     <h2 class="text-lg font-semibold text-blazeOrange mb-2">
-                      Controle de qualidade
+                      Qualidade individual
                     </h2>
                   </div>
                   <div class="mt-4">
@@ -333,6 +331,7 @@
             </div>
           </div>
         </section>
+        <!-- Seção com estatísticas sobre produtos que precisam de inspeção -->
         <section class="p-3 sm:p-5 antialiased">
           <div class="mx-auto max-w-screen-xl px-4 lg:px-12 relative">
             <div

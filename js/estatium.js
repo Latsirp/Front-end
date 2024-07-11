@@ -1,3 +1,4 @@
+// Botão do sidebar
 const sidebar = document.getElementById("default-sidebar");
 const contentWrapper = document.getElementById("content-wrapper");
 const sidebarToggleButton = document.querySelector(
@@ -8,7 +9,7 @@ sidebarToggleButton.addEventListener("click", function () {
   contentWrapper.classList.toggle("ml-0");
   contentWrapper.classList.toggle("ml-64");
 });
-
+// Ajustar o conteúdo de acordo com o sidebar
 document.addEventListener("click", function (event) {
   if (
     !sidebar.contains(event.target) &&
@@ -19,7 +20,7 @@ document.addEventListener("click", function (event) {
     contentWrapper.classList.add("ml-0");
   }
 });
-
+// Botão para abrir o menu do Read, Update e Delete
 document.addEventListener("DOMContentLoaded", function () {
   const dropdownButton = document.getElementById("example-dropdown-button");
   const dropdownMenu = document.getElementById("example-dropdown");
@@ -28,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     dropdownMenu.classList.toggle("hidden");
   });
 });
-
+// Menu do Read, Update e Delete
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("dropdown");
   const modalToggle = document.querySelector(
@@ -44,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.remove("overflow-hidden");
   });
 });
-
+// Funções do modal Create
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("createProductModal");
   const modalToggle = document.querySelector(
@@ -67,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.remove("overflow-hidden");
   });
 });
-
+// Funções do modal Update
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("updateProductModal");
   const modalToggle = document.querySelector(
@@ -90,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.remove("overflow-hidden");
   });
 });
-
+// Funções do modal Read
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("readProductModal");
   const modalToggle = document.querySelector(
@@ -106,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.remove("overflow-hidden");
   });
 });
-
+// Funções do modal Delete
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("deleteModal");
   const modalToggle = document.querySelector(
@@ -122,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.remove("overflow-hidden");
   });
 });
-
+// Gráfico de pizza
 document.addEventListener("DOMContentLoaded", function () {
   var ctx = document.getElementById("donutChart").getContext("2d");
   var myChart = new Chart(ctx, {
