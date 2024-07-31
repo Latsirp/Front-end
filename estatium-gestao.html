@@ -12,7 +12,28 @@
     />
     <link rel="stylesheet" href="css/estatium.css" />
   </head>
-
+	<script>
+		function atualizarPagina(){
+			var xmlhttp;
+			var cCampos = "";
+			var cUrl = "teste_bd.php";
+			if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
+				xmlhttp=new XMLHttpRequest();
+			}else{// code for IE6, IE5
+				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.onreadystatechange=function(){
+				if (xmlhttp.readyState==4 && xmlhttp.status==200){
+					alert(xmlhttp.responseText);
+					document.getElementById("retornoBD").innerHTML=xmlhttp.responseText;
+					document.getElementById("retornoBD").style.display = 'block';
+				}
+			}
+			xmlhttp.open("POST",cUrl,true);
+			xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+			xmlhttp.send(cCampos);
+		}
+	</script>
   <body class="flex flex-col min-h-screen bg-orchidBlossom font-poppins">
     <!-- Botão para abrir o sidebar em dispositivos menores -->
     <button
@@ -152,6 +173,7 @@
       class="flex-1 p-6 ml-0 lg:ml-64 transition-margin duration-300 ease-in-out"
     >
       <main class="flex-1 p-6">
+		<!-- <button onclick="atualizarPagina()">Teste</button> -->
         <section class="p-3 sm:p-5 antialiased">
           <div class="mx-auto max-w-screen-xl px-4 lg:px-12 relative">
             <div
@@ -229,20 +251,9 @@
                       <th scope="col" class="px-4 py-3">Data de inspeção</th>
                     </tr>
                   </thead>
-                  <tbody>
+				  <tbody>
                     <tr class="border-b">
-                      <th
-                        scope="row"
-                        class="px-4 py-3 font-medium text-blazeOrange whitespace-nowrap"
-                      >
-                        Nome
-                      </th>
-                      <td class="px-4 py-3">ID</td>
-                      <td class="px-4 py-3 max-w-[12rem] truncate">
-                        Descrição
-                      </td>
-                      <td class="px-4 py-3">Qualidade</td>
-                      <td class="px-4 py-3">Data de inspeção</td>
+						<td><div id="retornoBD" style="display:none;"></div></td>
                       <td class="px-4 py-3 relative">
                         <button
                           id="dropdown-button"
@@ -497,7 +508,8 @@
               </div>
               <button
                 type="submit"
-                class="text-white inline-flex items-center bg-blazeOrange hover:bg-white hover:text-blazeOrange border border-blazeOrange focus:ring-4 focus:outline-none focus:ring-blazeOrange font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                class="text-white inline-flex items-center bg-blazeOrange hover:bg-white hover:text-blazeOrange border border-blazeOrange focus:ring-4 focus:outline-none focus:ring-blazeOrange font-medium rounded-lg text-sm px-5 py-2.5 text-center" 
+				id="ADICIONAR_PRODUTO" onClick="adicionarProduto()" 
               >
                 <svg
                   class="mr-1 -ml-1 w-6 h-6"
