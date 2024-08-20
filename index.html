@@ -17,7 +17,7 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-200">
+  <body class="bg-gray-950 flex flex-col min-h-screen">
     <header
       class="sticky shadow-lg top-0 bg-gradient-to-br from-slate-600 to-slate-950 py-3 px-10 flex items-center rounded-b-xl w-full"
     >
@@ -44,7 +44,7 @@
         >
         <a
           href=""
-          class="border-2 text-lg font-semibold border-gray-200 px-4 rounded-full text-gray-200 hover:scale-90 active:75 duration-75"
+          class="border-2 text-lg font-semibold border-gray-200 px-4 rounded-full text-gray-200 hover:scale-90 active:75 duration-75 hover:bg-gray-200 hover:text-slate-950"
           >Sair</a
         >
       </nav>
@@ -56,12 +56,8 @@
           class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"
         >
           <div class="font-light text-gray-200 sm:text-lg">
-            <h2
-              class="mb-4 text-4xl tracking-estatium font-extrabold uppercase text-slate-950"
-            >
-              Sobre nós
-            </h2>
-            <p class="mb-4 text-slate-800">
+            <h2 class="mb-4 text-4xl font-extrabold uppercase">Sobre nós</h2>
+            <p class="mb-4 text-gray-200">
               A Estatium foi criada para ajudar qualquer empresa que deseja
               controlar a qualidade do seu produto, fazendo assim, sua empresa
               um local melhor e mais favorável para a excelência.<br /><br />Nós
@@ -90,9 +86,7 @@
       <section class="bg-gradient-to-br from-slate-600 to-slate-950">
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div class="max-w-screen-md mb-8 lg:mb-16">
-            <h2
-              class="mb-4 text-4xl tracking-estatium font-extrabold text-gray-200"
-            >
+            <h2 class="mb-4 text-4xl font-extrabold text-gray-200">
               LINGUAGENS DE PROGRAMAÇÃO
             </h2>
             <p class="sm:text-xl text-gray-200">
@@ -209,16 +203,16 @@
       <!-- Nosso time -->
       <section>
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-          <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-            <h2
-              class="mb-4 p-4 text-4xl tracking-estatium font-extrabold text-slate-950 bg-gray-200 shadow-lg rounded-lg"
-            >
+          <div
+            class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16 bg-gradient-to-br from-slate-600 to-slate-950 rounded-md"
+          >
+            <h2 class="mb-4 p-4 text-4xl font-extrabold text-gray-200">
               NOSSO TIME
             </h2>
           </div>
           <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
             <div
-              class="items-center bg-gradient-to-br from-slate-600 to-slate-950 rounded-lg shadow-lg sm:flex border-4 border-slate-950"
+              class="items-center bg-gradient-to-br from-slate-600 to-slate-950 rounded-lg shadow-lg sm:flex"
             >
               <img
                 class="w-64 rounded-lg sm:rounded-none sm:rounded-l-lg"
@@ -226,7 +220,7 @@
                 alt="Henrique"
               />
               <div class="p-5">
-                <h3 class="text-xl font-bold tracking-estatium text-gray-200">
+                <h3 class="text-xl font-bold text-gray-200">
                   Henrique Eberhardt
                 </h3>
                 <span class="text-gray-200">Líder</span>
@@ -237,7 +231,7 @@
               </div>
             </div>
             <div
-              class="items-center bg-gradient-to-br from-slate-600 to-slate-950 rounded-lg shadow-lg sm:flex border-4 border-slate-950"
+              class="items-center bg-gradient-to-br from-slate-600 to-slate-950 rounded-lg shadow-lg sm:flex"
             >
               <img
                 class="w-64 rounded-lg sm:rounded-none sm:rounded-l-lg"
@@ -245,7 +239,7 @@
                 alt="Matheus"
               />
               <div class="p-5">
-                <h3 class="text-xl font-bold tracking-estatium text-gray-200">
+                <h3 class="text-xl font-bold text-gray-200">
                   Matheus Kuppers Stroppoli
                 </h3>
                 <span class="text-gray-200">Marketing</span>
@@ -256,7 +250,7 @@
               </div>
             </div>
             <div
-              class="items-center bg-gradient-to-br from-slate-600 to-slate-950 rounded-lg shadow-lg sm:flex border-4 border-slate-950"
+              class="items-center bg-gradient-to-br from-slate-600 to-slate-950 rounded-lg shadow-lg sm:flex"
             >
               <img
                 class="w-64 rounded-lg sm:rounded-none sm:rounded-l-lg"
@@ -264,7 +258,7 @@
                 alt="Enzo"
               />
               <div class="p-5">
-                <h3 class="text-xl font-bold tracking-estatium text-gray-200">
+                <h3 class="text-xl font-bold text-gray-200">
                   Enzo dos Santos Scholl
                 </h3>
                 <span class="text-gray-200">Front-end</span>
@@ -275,7 +269,7 @@
               </div>
             </div>
             <div
-              class="items-center bg-gradient-to-br from-slate-600 to-slate-950 rounded-lg shadow-lg sm:flex border-4 border-slate-950"
+              class="items-center bg-gradient-to-br from-slate-600 to-slate-950 rounded-lg shadow-lg sm:flex"
             >
               <img
                 class="w-64 rounded-lg sm:rounded-none sm:rounded-l-lg"
@@ -283,7 +277,7 @@
                 alt="João Vitor"
               />
               <div class="p-5">
-                <h3 class="text-xl font-bold tracking-estatium text-gray-200">
+                <h3 class="text-xl font-bold text-gray-200">
                   João Vitor Mick Schmitt
                 </h3>
                 <span class="text-gray-200">Back-end</span>
@@ -294,7 +288,7 @@
               </div>
             </div>
             <div
-              class="items-center bg-gradient-to-br from-slate-600 to-slate-950 rounded-lg shadow-lg sm:flex border-4 border-slate-950"
+              class="items-center bg-gradient-to-br from-slate-600 to-slate-950 rounded-lg shadow-lg sm:flex"
             >
               <img
                 class="w-64 rounded-lg sm:rounded-none sm:rounded-l-lg"
@@ -302,7 +296,7 @@
                 alt="Guilherme Henrique"
               />
               <div class="p-5">
-                <h3 class="text-xl font-bold tracking-estatium text-gray-200">
+                <h3 class="text-xl font-bold text-gray-200">
                   Guilherme Henrique Kaht
                 </h3>
                 <span class="text-gray-200">Banco de dados</span>
@@ -314,7 +308,7 @@
               </div>
             </div>
             <div
-              class="items-center bg-gradient-to-br from-slate-600 to-slate-950 rounded-lg shadow-lg sm:flex border-4 border-slate-950"
+              class="items-center bg-gradient-to-br from-slate-600 to-slate-950 rounded-lg shadow-lg sm:flex"
             >
               <img
                 class="w-64 rounded-lg sm:rounded-none sm:rounded-l-lg"
@@ -322,7 +316,7 @@
                 alt="Lucas"
               />
               <div class="p-5">
-                <h3 class="text-xl font-bold tracking-estatium text-gray-200">
+                <h3 class="text-xl font-bold text-gray-200">
                   Lucas Maurício Pitz
                 </h3>
                 <span class="text-gray-200">Agregado</span>
@@ -338,9 +332,7 @@
       <section class="bg-gradient-to-br from-slate-600 to-slate-950">
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div class="max-w-screen-lg text-gray-200 sm:text-lg">
-            <h2
-              class="mb-4 text-4xl tracking-estatium font-extrabold text-gray-200"
-            >
+            <h2 class="mb-4 text-4xl font-extrabold text-gray-200">
               NOSSOS VALORES
             </h2>
             <ol class="mb-4 font-light">
@@ -377,49 +369,28 @@
       <!-- Nossos objetivos -->
       <section>
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-          <div class="max-w-screen-lg text-slate-950 sm:text-lg">
-            <h2
-              class="mb-4 text-4xl tracking-estatium font-extrabold text-slate-950"
-            >
-              NOSSOS OBJETIVOS
-            </h2>
-            <ol class="mb-4 font-light">
-              <li>
-                Inovação: Comprometimento com a criação de soluções tecnológicas
-                avançadas que atendam às necessidades em constante evolução da
-                indústria têxtil;
-              </li>
-              <br />
-              <li>
-                Qualidade: Foco incessante na entrega de produtos e serviços que
-                superem as expectativas dos clientes;
-              </li>
-              <br />
-              <li>
-                Transparência: Manter uma comunicação clara e honesta com nossos
-                clientes, parceiros e colaboradores;
-              </li>
-              <br />
-              <li>
-                Sustentabilidade: Promover práticas que minimizem o impacto
-                ambiental e contribuam para o desenvolvimento sustentável;
-              </li>
-              <br />
-              <li>
-                Excelência no Atendimento: Prover um suporte excepcional,
-                garantindo que nossos clientes obtenham o máximo benefício de
-                nossas soluções.
-              </li>
-            </ol>
+          <div class="max-w-screen-lg text-gray-200 sm:text-lg">
+            <h2 class="mb-4 text-4xl font-extrabold">NOSSOS OBJETIVOS</h2>
+            <div class="font-light text-gray-200 sm:text-lg">
+              <p class="mb-4 text-gray-200">
+                Temos como objetivo principal construir uma plataforma web, onde
+                será registrado o desempenho das mercadorias, assim facilitará o
+                gerenciamento dos produtos e a confiabilidade do negócio.<br /><br />Com
+                nosso projeto gostaríamos de ajudar empresas a adquirir
+                confiabilidade dos clientes através da boa qualidade<br /><br />Através
+                dele, a empresa empregada com a nossa plataforma consegue ter um
+                melhor gerenciamento dos seus produtos e maquinárioss
+              </p>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer
-      class="absolute bg-gradient-to-br from-slate-600 to-slate-950 py-3 px-10 items-center rounded-t-xl w-full flex flex-col space-y-10"
+      class="relative bg-gradient-to-br from-slate-600 to-slate-950 py-3 px-10 items-center rounded-t-xl w-full flex flex-col space-y-10"
     >
       <a
-        href=""
+        href="https://www.instagram.com/estatium_?igsh=MWFiejg1YTBpNDlmcw=="
         class="border-2 text-lg font-semibold border-gray-200 px-4 rounded-full bg-gray-200 text-slate-50 hover:scale-90 active:75 duration-75 hover:bg-slate-50 hover:border-gray-200 hover:text-gray-200"
         >Instagram</a
       >
