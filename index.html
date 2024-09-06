@@ -23,7 +23,7 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="flex flex-col min-h-screen bg-stone-950">
+  <body class="flex flex-col min-h-screen bg-stone-950 tracking-widest">
     <button
       type="button"
       class="inline-flex fixed size-fit items-center mt-2 ml-3 text-sm text-slate-100 z-20 hover:scale-90 active:scale-75 duration-200"
@@ -43,6 +43,7 @@
         />
       </svg>
     </button>
+    <!-- Menu lateral -->
     <header
       id="menu-lateral"
       class="fixed top-0 left-0 z-10 w-64 sm:w-96 h-screen bg-orange-400 rounded-tr-2xl rounded-br-2xl -translate-x-full duration-200"
@@ -55,7 +56,7 @@
         <nav class="pt-5 mt-5 space-y-2 border-t-2 border-slate-100 font-bold">
           <a
             href="index.html"
-            class="flex items-center p-2 text-slate-100 border-2 border-slate-100 rounded-lg hover:bg-slate-100 hover:text-orange-400 group text-2xl"
+            class="flex items-center p-2 text-slate-100 border-2 border-slate-100 rounded-lg hover:bg-slate-100 hover:text-orange-400 group text-2xl duration-200"
             aria-label="Início"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +75,7 @@
           >
           <a
             href="gestao.html"
-            class="flex items-center p-2 text-slate-100 border-2 border-slate-100 rounded-lg hover:bg-slate-100 hover:text-orange-400 group text-2xl"
+            class="flex items-center p-2 text-slate-100 border-2 border-slate-100 rounded-lg hover:bg-slate-100 hover:text-orange-400 group text-2xl duration-200"
             aria-label="Gestão"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +91,7 @@
           >
           <a
             href="desempenho.html"
-            class="flex items-center p-2 text-slate-100 border-2 border-slate-100 rounded-lg hover:bg-slate-100 hover:text-orange-400 group text-2xl"
+            class="flex items-center p-2 text-slate-100 border-2 border-slate-100 rounded-lg hover:bg-slate-100 hover:text-orange-400 group text-2xl duration-200"
             aria-label="Desempenho"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +112,7 @@
           >
           <a
             href=".html"
-            class="flex items-center p-2 text-slate-100 border-2 border-slate-100 rounded-lg hover:bg-slate-100 hover:text-orange-400 group text-2xl"
+            class="flex items-center p-2 text-slate-100 border-2 border-slate-100 rounded-lg hover:bg-slate-100 hover:text-orange-400 group text-2xl duration-200"
             aria-label="Sair"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
@@ -130,11 +131,22 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section id="sobre-nos">
-        <h1 aria-label="Sobre nós">SOBRE NÓS</h1>
-        <p
-          aria-label="A Estatium foi criada para ajudar qualquer empresa que deseja
+    <main class="flex-1 p-6">
+      <!-- Sobre nós -->
+      <section class="bg-orange-400 border-2 rounded border-slate-100">
+        <div
+          class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"
+        >
+          <div class="font-light text-slate-100 sm:text-lg">
+            <h1
+              class="mb-4 text-4xl font-extrabold text-slate-100"
+              aria-label="Sobre nós"
+            >
+              SOBRE NÓS
+            </h1>
+            <p
+              class="mb-4"
+              aria-label="A Estatium foi criada para ajudar qualquer empresa que deseja
           controlar a qualidade do seu produto, fazendo assim, sua empresa um
           local melhor e mais favorável para a excelência. Nós
           conseguimos fazer com que você consigo adicionar produtos, atualizar
@@ -142,56 +154,358 @@
           avulso. Também temos um sistema que informa a última data
           de inspeção do produto e controlando quando será necessário
           inspecionar novamente"
-        >
-          A Estatium foi criada para ajudar qualquer empresa que deseja
-          controlar a qualidade do seu produto, fazendo assim, sua empresa um
-          local melhor e mais favorável para a excelência.<br /><br />Nós
-          conseguimos fazer com que você consigo adicionar produtos, atualizar
-          dados de produtos, deletar e mostrar o desempenho geral e do produto
-          avulso.<br /><br />Também temos um sistema que informa a última data
-          de inspeção do produto e controlando quando será necessário
-          inspecionar novamente.
-        </p>
-      </section>
-      <section id="linguagens-programacao">
-        <h1 aria-label="Linguagens de programação">
-          LINGUAGENS DE PROGRAMAÇÃO
-        </h1>
-        <p
-          aria-label="Na Estatium, exploramos as linguagens de programação essenciais
-          que impulsionam a criação de soluções digitais inovadoras. Desde
-          a estruturação básica com HTML até a interatividade dinâmica com
-          JavaScript, cada linguagem desempenha um papel crucial na
-          construção de experiências web robustas e funcionais"
-        >
-          Na Estatium, exploramos as linguagens de programação essenciais que
-          impulsionam a criação de soluções digitais inovadoras.<br /><br />Desde
-          a estruturação básica com HTML até a interatividade dinâmica com
-          JavaScript, cada linguagem desempenha um papel crucial na construção
-          de experiências web robustas e funcionais.
-        </p>
-        <div>
-          <div class="linguagem-grid">
-            <img src="img/icones/html.svg" alt="HTML" class="linguagem-icone" />
-            <h2 aria-label="HTML">HTML</h2>
-            <p
-              aria-label="HTML permite definir a estrutura básica de uma página, incluindo
-            elementos como texto, imagens e links"
             >
-              HTML permite definir a estrutura básica de uma página, incluindo
-              elementos como texto, imagens e links.
+              A Estatium foi criada para ajudar qualquer empresa que deseja
+              controlar a qualidade do seu produto, fazendo assim, sua empresa
+              um local melhor e mais favorável para a excelência.<br /><br />Nós
+              conseguimos fazer com que você consigo adicionar produtos,
+              atualizar dados de produtos, deletar e mostrar o desempenho geral
+              e do produto avulso.<br /><br />Também temos um sistema que
+              informa a última data de inspeção do produto e controlando quando
+              será necessário inspecionar novamente.
             </p>
           </div>
-          <div class="linguagem-grid">
-            <img src="img/icones/html.svg" alt="HTML" class="linguagem-icone" />
-            <h2 aria-label="HTML">HTML</h2>
-            <p
-              aria-label="HTML permite definir a estrutura básica de uma página, incluindo
-            elementos como texto, imagens e links"
+          <div class="grid grid-cols-2 gap-4 mt-8">
+            <img
+              class="w-full rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
+              alt="office content 1"
+            />
+            <img
+              class="mt-4 w-full lg:mt-10 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
+              alt="office content 2"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Linguagens de programação -->
+      <section>
+        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+          <div class="max-w-screen-md mb-8 lg:mb-16">
+            <h2
+              class="mb-4 text-4xl font-extrabold uppercase text-slate-100"
+              aria-label="Linguagens de programação"
             >
-              HTML permite definir a estrutura básica de uma página, incluindo
-              elementos como texto, imagens e links.
+              LINGUAGENS DE PROGRAMAÇÃO
+            </h2>
+            <p
+              class="text-slate-100 sm:text-xl"
+              aria-label="Na Estatium, exploramos as linguagens de programação essenciais
+            que impulsionam a criação de soluções digitais inovadoras. Desde
+            a estruturação básica com HTML até a interatividade dinâmica com
+            JavaScript, cada linguagem desempenha um papel crucial na
+            construção de experiências web robustas e funcionais"
+            >
+              Na Estatium, exploramos as linguagens de programação essenciais
+              que impulsionam a criação de soluções digitais inovadoras.<br /><br />Desde
+              a estruturação básica com HTML até a interatividade dinâmica com
+              JavaScript, cada linguagem desempenha um papel crucial na
+              construção de experiências web robustas e funcionais.
             </p>
+          </div>
+          <div
+            class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0"
+          >
+            <div>
+              <div
+                class="flex justify-center items-center mb-4 size-10 rounded-full bg-orange-400 lg:size-12"
+              >
+                <img
+                  class="size-6 lg:size-8 invert"
+                  src="img/icones/html.svg"
+                  alt="HTML"
+                />
+              </div>
+              <h3
+                class="mb-2 text-xl font-bold text-slate-100"
+                aria-label="HTML"
+              >
+                HTML
+              </h3>
+              <p
+                class="text-slate-100"
+                aria-label="HTML permite definir a estrutura básica de uma página, incluindo
+              elementos como texto, imagens e links"
+              >
+                HTML permite definir a estrutura básica de uma página, incluindo
+                elementos como texto, imagens e links.
+              </p>
+            </div>
+            <div>
+              <div
+                class="flex justify-center items-center mb-4 size-10 rounded-full bg-orange-400 lg:size-12"
+              >
+                <img
+                  class="size-6 lg:size-8 invert"
+                  src="img/icones/css.svg"
+                  alt="CSS"
+                />
+              </div>
+              <h3
+                class="mb-2 text-xl font-bold text-slate-100"
+                aria-label="CSS"
+              >
+                CSS
+              </h3>
+              <p
+                class="text-slate-100"
+                aria-label="CSS é usado para controlar o layout, as cores e os estilos de
+              todos os elementos HTML em um site"
+              >
+                CSS é usado para controlar o layout, as cores e os estilos de
+                todos os elementos HTML em um site.
+              </p>
+            </div>
+            <div>
+              <div
+                class="flex justify-center items-center mb-4 size-10 rounded-full bg-orange-400 lg:size-12"
+              >
+                <img
+                  class="size-6 lg:size-8 invert"
+                  src="img/icones/js.svg"
+                  alt="JavaScript"
+                />
+              </div>
+              <h3
+                class="mb-2 text-xl font-bold text-slate-100"
+                aria-label="JavaScript"
+              >
+                JavaScript
+              </h3>
+              <p
+                class="text-slate-100"
+                aria-label="JavaScript permite criar funcionalidades avançadas, como
+              animações, validações de formulários e atualizações de conteúdo
+              em tempo real"
+              >
+                JavaScript permite criar funcionalidades avançadas, como
+                animações, validações de formulários e atualizações de conteúdo
+                em tempo real.
+              </p>
+            </div>
+            <div>
+              <div
+                class="flex justify-center items-center mb-4 size-10 rounded-full bg-orange-400 lg:size-12"
+              >
+                <img
+                  class="size-6 lg:size-8 invert"
+                  src="img/icones/java.svg"
+                  alt="Java"
+                />
+              </div>
+              <h3
+                class="mb-2 text-xl font-bold text-slate-100"
+                aria-label="Java"
+              >
+                Java
+              </h3>
+              <p
+                class="text-slate-100"
+                aria-label="Java é amplamente utilizado em aplicativos corporativos, desde
+              sistemas financeiros até aplicativos móveis"
+              >
+                Java é amplamente utilizado em aplicativos corporativos, desde
+                sistemas financeiros até aplicativos móveis.
+              </p>
+            </div>
+            <div>
+              <div
+                class="flex justify-center items-center mb-4 size-10 rounded-full bg-orange-400 lg:size-12"
+              >
+                <img
+                  class="size-6 lg:size-8 invert"
+                  src="img/icones/sql.svg"
+                  alt="SQL"
+                />
+              </div>
+              <h3
+                class="mb-2 text-xl font-bold text-slate-100"
+                aria-label="SQL"
+              >
+                SQL
+              </h3>
+              <p
+                class="text-slate-100"
+                aria-label="SQL é essencial para consultas complexas, inserções de dados e
+              operações de atualização em bancos de dados"
+              >
+                SQL é essencial para consultas complexas, inserções de dados e
+                operações de atualização em bancos de dados.
+              </p>
+            </div>
+            <div>
+              <div
+                class="flex justify-center items-center mb-4 size-10 rounded-full bg-orange-400 lg:size-12"
+              >
+                <img
+                  class="size-6 lg:size-8 invert"
+                  src="img/icones/jsp.svg"
+                  alt="JSP"
+                />
+              </div>
+              <h3
+                class="mb-2 text-xl font-bold text-slate-100"
+                aria-label="JSP"
+              >
+                JSP
+              </h3>
+              <p
+                class="text-slate-100"
+                aria-label="JSP é uma forma de implementar o conteúdo da página dinâmica do
+              lado do servidor"
+              >
+                JSP é uma forma de implementar o conteúdo da página dinâmica do
+                lado do servidor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Nosso objetivo -->
+      <section class="bg-orange-400 rounded border-2 border-slate-100">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+          <div class="max-w-screen-lg text-slate-100 sm:text-lg">
+            <h2
+              class="mb-4 text-4xl tracking-estatium font-extrabold text-slate-100"
+              aria-label="Nosso objetivo"
+            >
+              NOSSO OBJETIVO
+            </h2>
+            <p
+              class="mb-4 font-light"
+              aria-label="Nossa missão é fornecer ferramentas eficazes e intuitivas que
+            permitam às empresas do setor têxtil melhorar continuamente seus
+            processos de produção, detectar e corrigir defeitos de maneira
+            proativa e, assim, aumentar a satisfação e a confiança dos
+            clientes"
+            >
+              Nossa missão é fornecer ferramentas eficazes e intuitivas que
+              permitam às empresas do setor têxtil melhorar continuamente seus
+              processos de produção, detectar e corrigir defeitos de maneira
+              proativa e, assim, aumentar a satisfação e a confiança dos
+              clientes.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Nosso time -->
+      <section>
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+          <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+            <h2
+              class="mb-4 p-4 text-4xl font-extrabold text-slate-100 bg-orange-400 shadow-lg rounded-lg"
+            >
+              NOSSO TIME
+            </h2>
+          </div>
+          <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+            <div
+              class="items-center bg-white rounded-lg shadow-lg sm:flex border-4 border-blazeOrange"
+            >
+              <img
+                class="w-64 rounded-lg sm:rounded-none sm:rounded-l-lg"
+                src="img/estatium-henrique.png"
+                alt="Líder"
+              />
+              <div class="p-5">
+                <h3
+                  class="text-xl font-bold tracking-estatium text-blazeOrange"
+                >
+                  Henrique Eberhardt
+                </h3>
+                <span class="text-blazeOrange">Líder</span>
+                <p class="mt-3 mb-4 font-light text-nickel">
+                  Henrique conduz a estratégia técnica e as iniciativas de
+                  liderança para a marca Estatium.
+                </p>
+              </div>
+            </div>
+            <div
+              class="items-center bg-white rounded-lg shadow-lg sm:flex border-4 border-blazeOrange"
+            >
+              <img
+                class="w-64 rounded-lg sm:rounded-none sm:rounded-l-lg"
+                src="img/estatium-miguel.png"
+                alt="Marketing"
+              />
+              <div class="p-5">
+                <h3
+                  class="text-xl font-bold tracking-estatium text-blazeOrange"
+                >
+                  Miguel Vieiro da Silva
+                </h3>
+                <span class="text-blazeOrange">Marketing</span>
+                <p class="mt-3 mb-4 font-light text-nickel">
+                  Miguel molda a estratégia de marketing e as iniciativas para a
+                  marca Estatium.
+                </p>
+              </div>
+            </div>
+            <div
+              class="items-center bg-white rounded-lg shadow-lg sm:flex border-4 border-blazeOrange"
+            >
+              <img
+                class="w-64 rounded-lg sm:rounded-none sm:rounded-l-lg"
+                src="img/estatium-enzo.png"
+                alt="Front-end"
+              />
+              <div class="p-5">
+                <h3
+                  class="text-xl font-bold tracking-estatium text-blazeOrange"
+                >
+                  Enzo dos Santos Scholl
+                </h3>
+                <span class="text-blazeOrange">Front-end</span>
+                <p class="mt-3 mb-4 font-light text-nickel">
+                  Enzo arquiteta o desenvolvimento front-end e a experiência do
+                  usuário para a marca Estatium.
+                </p>
+              </div>
+            </div>
+            <div
+              class="items-center bg-white rounded-lg shadow-lg sm:flex border-4 border-blazeOrange"
+            >
+              <img
+                class="w-64 rounded-lg sm:rounded-none sm:rounded-l-lg"
+                src="img/estatium-mick.png"
+                alt="Back-end"
+              />
+              <div class="p-5">
+                <h3
+                  class="text-xl font-bold tracking-estatium text-blazeOrange"
+                >
+                  João Vitor Mick Schmitt
+                </h3>
+                <span class="text-blazeOrange">Back-end</span>
+                <p class="mt-3 mb-4 font-light text-nickel">
+                  João Vitor lidera o desenvolvimento back-end e a
+                  infraestrutura técnica para a marca Estatium.
+                </p>
+              </div>
+            </div>
+            <div
+              class="items-center bg-white rounded-lg shadow-lg sm:flex border-4 border-blazeOrange"
+            >
+              <img
+                class="w-64 rounded-lg sm:rounded-none sm:rounded-l-lg"
+                src="img/estatium-kaht.png"
+                alt="Banco de dados"
+              />
+              <div class="p-5">
+                <h3
+                  class="text-xl font-bold tracking-estatium text-blazeOrange"
+                >
+                  Guilherme Henrique Kaht
+                </h3>
+                <span class="text-blazeOrange">Banco de dados</span>
+                <p class="mt-3 mb-4 font-light text-nickel">
+                  Guilherme Henrique gerencia a arquitetura de banco de dados e
+                  as estratégias de gerenciamento de dados para a marca
+                  Estatium.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
