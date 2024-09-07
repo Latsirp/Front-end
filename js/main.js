@@ -1,7 +1,7 @@
 // Criando um evento que utiliza-se do ID do botão para abrir e fechar o menu lateral
 document.getElementById("abrir-menu").addEventListener("click", () => {
   const menuLateral = document.getElementById("menu-lateral");
-  const conteudo = document.querySelector("main", "footer");
+  const conteudo = document.querySelector("main");
   const footer = document.querySelector("footer");
   if (menuLateral.classList.contains("-translate-x-full")) {
     menuLateral.classList.remove("-translate-x-full");
