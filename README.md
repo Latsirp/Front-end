@@ -5,10 +5,10 @@ Projeto oficial da empresa fictícia Estatium.
 ## **Sumário**
 
 - [Sobre o Projeto](#sobre-o-projeto)
-- [Pelo Começo](#pelo-comeco)
-  - [Pré-requisitos](#pre-requisitos)
-  - [Instalação](#instalacao)
-- [Licença](#licensa)
+- [Pelo Começo](#pelo-começo)
+  - [Pré-requisitos](#pré-requisitos)
+  - [Instalação](#instalação)
+- [Licença](#licença)
 
 ## **Sobre o Projeto**
 
