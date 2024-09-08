@@ -443,6 +443,7 @@ if (document.getElementById("qualidade-individual")) {
         ],
       },
       options: {
+        responsive: true,
         indexAxis: "y",
         scales: {
           x: {
