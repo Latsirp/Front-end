@@ -1,5 +1,6 @@
 const menuLateral = document.getElementById("menu-lateral"); // Pegando o ID de menu-lateral no HTMl
 const iluminacao = document.querySelectorAll(`[data-brightness]`); // Selecionando todas as instâncias de data-brightness no HTML
+const voltarTopo = document.getElementById("voltar-topo"); // Pegando o ID de voltar-topo no HTML
 const modalIluminacao = document.querySelectorAll(`[data-modal-brightness]`); // Selecionando todas as instâncias de data-modal-brightness no HTML
 const createModal = document.getElementById("create-modal"); // Pegando o ID de create-modal no HTMl
 const updateModal = document.getElementById("update-modal"); // Pegando o ID de update-modal no HTMl
@@ -29,6 +30,30 @@ if (document.getElementById("abrir-menu")) {
     }
   });
 }
+
+// Criando um evento que utiliza-se do ID do botão para voltar ao topo da página
+if (document.getElementById("voltar-topo")) {
+  window.onscroll = function () {
+    scrollar();
+  };
+  function scrollar() {
+    if (
+      document.documentElement.scrollTop > 20 ||
+      document.body.scrollTop > 20
+    ) {
+      voltarTopo.classList.remove("hidden");
+      voltarTopo.classList.add("block");
+    } else {
+      voltarTopo.classList.remove("block");
+      voltarTopo.classList.add("hidden");
+    }
+  }
+  voltarTopo.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  });
+}
+
 // Criando um evento que utiliza-se do ID do botão para abrir a janela do create
 if (document.getElementById("abrir-create")) {
   document.getElementById("abrir-create").addEventListener("click", () => {
@@ -112,7 +137,7 @@ if (document.getElementById("qualidade-individual")) {
         datasets: [
           {
             data: [85, 70, 90, 10, 20, 55.5],
-            backgroundColor: ["rgb(249, 115, 22)", "rgb(217, 119, 6)"],
+            backgroundColor: ["rgb(254, 215, 170)", "rgb(253, 186, 116)"],
           },
         ],
       },
@@ -124,22 +149,22 @@ if (document.getElementById("qualidade-individual")) {
             max: 100,
             title: {
               display: true,
-              text: "PORCENTAGEM",
+              text: "PORCENTAGEM (%)",
             },
             grid: {
-              color: "rgba(255, 255, 255, 0.1)",
-              borderColor: "rgba(0, 0, 0, 0.2)",
+              color: "rgba(255, 237, 213, 0.1)",
+              borderColor: "rgba(255, 237, 213, 0.2)",
               borderDash: [5, 5],
             },
           },
           y: {
-            title: {
-              display: true,
-              text: "PRODUTOS",
+            grid: {
+              color: "rgba(255, 237, 213, 0.1)",
+              borderColor: "rgba(255, 237, 213, 0.2)",
+              borderDash: [5, 5],
             },
           },
         },
-
         plugins: {
           legend: {
             display: false,
@@ -155,19 +180,20 @@ if (document.getElementById("qualidade-geral")) {
   document.addEventListener("DOMContentLoaded", () => {
     const ctx = document.getElementById("qualidade-geral");
     new Chart(ctx, {
-      type: "doughnut",
+      type: "pie",
       data: {
         labels: ["PERFEITO", "BOM", "MÉDIO", "RUIM", "PÉSSIMO"],
         datasets: [
           {
             data: [15, 15, 15, 15, 15],
             backgroundColor: [
-              "rgb(0, 128, 0)",
-              "rgb(50, 205, 50)",
-              "rgb(255, 215, 0)",
-              "rgb(255, 69, 0)",
-              "rgb(255, 0, 0)",
+              "rgb(34, 197, 94)",
+              "rgb(132, 204, 22)",
+              "rgb(234, 179, 8)",
+              "rgb(249, 115, 22)",
+              "rgb(239, 68, 68)",
             ],
+            borderColor: "rgba(0, 0, 0, 0.5)",
             hoverOffset: 4,
           },
         ],

@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="pt" class="scroll-smooth antialised tracking-wide">
+<html
+  lang="pt"
+  class="scroll-smooth antialised tracking-wide sm:overflow-y-hidden"
+>
   <head>
     <meta charset="UTF-8" />
     <link rel="shortcut icon" href="img/logo/favicon.ico" type="image/x-icon" />
@@ -22,7 +25,7 @@
     class="flex min-h-screen flex-col bg-stone-950"
     style="background-image: url(img/fundo.webp); background-size: cover"
   >
-    <!-- Botão -->
+    <!-- Abrir menu -->
     <button
       type="button"
       class="fixed z-20 mt-4 ml-4 block size-fit rounded-lg border-2 border-stone-950 bg-orange-400 p-2 text-sm text-slate-100 duration-200 hover:scale-90 active:scale-75 sm:hidden"
@@ -211,6 +214,12 @@
             <table
               class="w-full rounded-lg border-2 border-orange-400 text-center text-sm"
             >
+              <caption
+                class="mb-2 caption-top text-lg text-center font-extrabold text-stone-950"
+                aria-label="Produtos que precisam de inspeção"
+              >
+                PRODUTOS QUE PRECISAM DE INSPEÇÃO
+              </caption>
               <thead class="bg-stone-950 text-xs text-orange-400">
                 <tr>
                   <th
@@ -287,6 +296,16 @@
         </section>
       </div>
     </main>
+    <!-- Voltar ao topo -->
+    <button
+      type="button"
+      class="fixed right-0 bottom-0 z-20 mb-4 mr-4 hidden size-fit rounded-lg border-2 border-stone-950 bg-orange-400 p-2 text-sm text-slate-100 duration-200 hover:scale-90 active:scale-75"
+      id="voltar-topo"
+      aria-label="Voltar ao topo"
+      data-brightness
+    >
+      <img src="img/icones/seta-cima.svg" alt="Voltar ao topo" class="size-6" />
+    </button>
     <!-- Rodapé -->
     <footer
       class="relative flex w-full flex-col items-center space-y-10 bg-orange-400 p-10"
