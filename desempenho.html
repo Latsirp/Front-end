@@ -2,6 +2,7 @@
 <html
   lang="pt"
   class="scroll-smooth antialised tracking-wide sm:overflow-y-hidden"
+  id="desempenho"
 >
   <head>
     <meta charset="UTF-8" />
@@ -36,7 +37,7 @@
     </button>
     <!-- Menu -->
     <header class="sm:px-2 sm:py-4">
-      <div class="hidden px-10 sm:block">
+      <div class="px-10" id="menu-desktop">
         <nav class="flex items-center justify-end space-x-5">
           <h1
             class="mr-auto flex items-center text-3xl font-extrabold text-orange-400"
@@ -57,7 +58,7 @@
             >GESTÃO</a
           >
           <a
-            href="desempenho.html"
+            href="#"
             class="font-extrabold text-orange-400 hover:text-orange-300"
             aria-label="Desempenho"
             >DESEMPENHO</a
@@ -69,65 +70,6 @@
             >SAIR</a
           >
         </nav>
-      </div>
-      <div
-        class="fixed left-0 top-0 z-10 h-screen -translate-x-full rounded-br-2xl rounded-tr-2xl bg-orange-400 duration-200 sm:hidden"
-        id="menu-lateral"
-        style="
-          background-image: url(img/fundo-alt.webp);
-          background-size: cover;
-          background-position-x: center;
-        "
-        aria-label="Menu lateral"
-      >
-        <div class="flex h-full flex-col overflow-y-hidden px-3 py-5">
-          <a href="index.html" aria-label="Início"
-            ><img src="img/logo/logo.svg" alt="Logo" class="mx-auto size-40"
-          /></a>
-          <nav
-            class="mt-5 space-y-2 border-t-2 border-stone-950 pt-5 font-bold"
-          >
-            <a
-              href="index.html"
-              class="flex items-center rounded-lg border-2 border-stone-950 p-2 text-xl text-stone-950"
-              aria-label="Início"
-              ><img
-                src="img/icones/casa.svg"
-                alt="Início"
-                class="mr-4 size-8"
-              />INÍCIO</a
-            >
-            <a
-              href="gestao.html"
-              class="flex items-center rounded-lg border-2 border-stone-950 p-2 text-xl text-stone-950"
-              aria-label="Gestão"
-              ><img
-                src="img/icones/pasta.svg"
-                alt="Gestão"
-                class="mr-4 size-8"
-              />
-              GESTÃO</a
-            >
-            <a
-              href="desempenho.html"
-              class="flex items-center rounded-lg border-2 border-stone-950 p-2 text-xl text-stone-950"
-              aria-label="Desempenho"
-              ><img
-                src="img/icones/grafico.svg"
-                alt="Desempenho"
-                class="mr-4 size-8"
-              />
-              DESEMPENHO</a
-            >
-            <a
-              href=".html"
-              class="flex items-center rounded-lg border-2 border-stone-950 p-2 text-xl text-stone-950"
-              aria-label="Sair"
-              ><img src="img/icones/porta.svg" alt="Sair" class="mr-4 size-8" />
-              SAIR</a
-            >
-          </nav>
-        </div>
       </div>
     </header>
     <!-- Conteúdo -->
@@ -287,7 +229,7 @@
                     scope="col"
                     class="px-4 py-3 font-extrabold text-red-500 uppercase"
                   >
-                    PRECISA DE INSPEÇÃO
+                    INSPEÇÃO NECESSÁRIA
                   </td>
                 </tr>
               </tbody>
@@ -330,7 +272,7 @@
           >GESTÃO</a
         >
         <a
-          href="desempenho.html"
+          href="#"
           class="font-extrabold text-stone-950 hover:text-stone-800"
           aria-label="Desempenho"
           >DESEMPENHO</a
