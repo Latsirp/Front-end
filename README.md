@@ -38,8 +38,6 @@ Se você gostaria de ter uma cópia local desse projeto funcionado, siga essas e
 
 ### **Instalação**
 
-#### Front-end
-
 1. **Abra um terminal no Visual Studio Code:**
 
    ```sh
@@ -69,11 +67,7 @@ Se você gostaria de ter uma cópia local desse projeto funcionado, siga essas e
    ```sh
    Arquivo > Abrir Pasta...
    ```
-   
-#### Back-end
 
-#### Database
-   
 ## **Licença**
 
 Esse projeto é de código aberto e está disponível sob `MIT License`.
